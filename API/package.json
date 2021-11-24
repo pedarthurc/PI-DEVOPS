@@ -2,10 +2,10 @@
   "name": "api-nodejs",
   "version": "1.0.0",
   "description": "sistema gerenciador de cadastro",
-  "main": "index.js",
+  "main": "./server/server.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node ./server/server.js",
+    "dev": "nodemon ./server/server.js"
   },
   "author": "pedro arthur",
   "license": "MIT",
