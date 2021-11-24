@@ -6,7 +6,7 @@ router.get('/',async function(req,res){
     res.json([{
         id: 1,
         title: 'REST API: Metodos',
-        content: '...',
+        content: 'fala Rodrigão',
         date: new Date()
     }]);
 })
