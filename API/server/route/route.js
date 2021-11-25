@@ -12,9 +12,9 @@ router.get('/teste',async function(req,res){
         date: new Date()
     }]);
 });
-router.get('/clientes',async function(req,res){
+/*router.get('/clientes',async function(req,res){
     const clientes = await service.getAll();
     res.json(clientes);
-});
+});*/
 
 module.exports = router;
