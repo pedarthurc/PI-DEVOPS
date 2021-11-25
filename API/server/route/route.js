@@ -16,7 +16,7 @@ router.get('/teste',async function(req,res){
 router.get('/clientes',async function(req,res){
     const clientes = await service.getAll();
     res.json(clientes);
-    console.log('aqui2');
+    console.log('aqui5');
 });
 
 module.exports = router;

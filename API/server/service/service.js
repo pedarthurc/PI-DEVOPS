@@ -3,4 +3,5 @@ const cadastroData = require('../data/data.js');
 
 exports.getAll = function (){
     return cadastroData.getClientes();
+    console.log('aqui4');
 }
