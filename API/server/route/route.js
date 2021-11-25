@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/teste',async function(req,res){
+router.get('/',async function(req,res){
     //Definição do comportamento
     res.json([{
         id: 1,
