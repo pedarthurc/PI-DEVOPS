@@ -11,6 +11,7 @@ router.get('/teste',async function(req,res){
         content: 'Oi mundo',
         date: new Date()
     }]);
+    console.log('aqui1');
 });
 /*router.get('/clientes',async function(req,res){
     const clientes = await service.getAll();
