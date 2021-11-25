@@ -13,9 +13,10 @@ router.get('/teste',async function(req,res){
     }]);
     console.log('aqui1');
 });
-/*router.get('/clientes',async function(req,res){
+router.get('/clientes',async function(req,res){
     const clientes = await service.getAll();
     res.json(clientes);
-});*/
+    console.log('aqui2');
+});
 
 module.exports = router;
