@@ -1,6 +1,6 @@
 //TUDO REFERENTE AO BANCO DE DADOS
 const pgp = require('pg-promise')();
-console.log('aqui2');
+console.log('aqui-0');
 const db = pgp({
     user: 'lwkjswucvoqsio',
     password: 'f011b9f988c1d3bbd37390c1281e50c17ba51d99c940be46415a4aadeb3a8ff7',
