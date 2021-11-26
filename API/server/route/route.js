@@ -3,12 +3,13 @@ const express = require('express');
 const router = express.Router();
 const service = require('../service/service.js');
 
+//TRAZER TODOS DO BANCO
 router.get('/teste',async function(req,res){
     //Definição do comportamento
     res.json([{
         id: 1,
-        title: 'REST API: UNIFAP - DEVOPS++PI',
-        content: 'Oi mundo',
+        title: 'REST API: UNIFAP - DEVOPSPI',
+        content: 'Olá todos',
         date: new Date()
     }]);
     console.log('aqui1');
