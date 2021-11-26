@@ -8,5 +8,4 @@ const db = pgp({
     port: '5432',
     password: 'f011b9f988c1d3bbd37390c1281e50c17ba51d99c940be46415a4aadeb3a8ff7'
 });
-
 module.exports = db;
