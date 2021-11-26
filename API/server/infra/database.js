@@ -6,6 +6,7 @@ const db = pgp({
     database: 'de0gvkdpmp3tqd',
     user: 'lwkjswucvoqsio',
     port: '5432',
-    password: 'f011b9f988c1d3bbd37390c1281e50c17ba51d99c940be46415a4aadeb3a8ff7'
+    password: 'f011b9f988c1d3bbd37390c1281e50c17ba51d99c940be46415a4aadeb3a8ff7',
+    ssl: true
 });
 module.exports = db;
