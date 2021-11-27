@@ -22,7 +22,11 @@ router.post('/inserir',async function(req,res){
 //ROTA P/ LER UM REGISTRO DO BANCO
 
 //ROTA P/ ATUALIZAR UM REGISTRO DO BANCO
-
+router.put('/atualizar/:id',async function(req,res){
+    const post = req.body 
+    await service.putAtualizarCliente(req.params.id, post);
+    res.end();
+}),
 //ROTA P/ REMOVER UM REGISTRO DO BANCO
 
 //ROTA P/ EXIBIR TODOS DO BANCO
