@@ -3,7 +3,6 @@ const express = require('express');
 const router = express.Router();
 const service = require('../service/service.js');
 
-//TRAZER TODOS DO BANCO
 router.get('/teste',async function(req,res){
     //Definição do comportamento
     res.json([{
@@ -12,12 +11,23 @@ router.get('/teste',async function(req,res){
         content: 'Olá todos',
         date: new Date()
     }]);
-    console.log('aqui1');
-});
-router.get('/clientes',async function(req,res){
-    const clientes = await service.getAll();
-    res.json(clientes);
-    console.log('aqui5');
 });
 
+//ROTA P/ INSERIR NOVO REGISTRO NO BANCO
+router.post('/inserir',async function(req,res){
+    const post = req.body //objeto json recebido pelo express.json
+    const clienteCadastrado = await service.postInserirCliente(post);
+    res.json(clienteCadastrado);
+}),
+//ROTA P/ LER UM REGISTRO DO BANCO
+
+//ROTA P/ ATUALIZAR UM REGISTRO DO BANCO
+
+//ROTA P/ REMOVER UM REGISTRO DO BANCO
+
+//ROTA P/ EXIBIR TODOS DO BANCO
+router.get('/clientes',async function(req,res){
+    const clientes = await service.getTodosCliente();
+    res.json(clientes);
+});
 module.exports = router;
