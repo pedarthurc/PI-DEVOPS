@@ -18,6 +18,6 @@ exports.postRemocaoCliente = function(id){
     return cadastroData.deleteOne(id);
 },
 //EXIBIR TODOS DO BANCO
-exports.getTodosCliente = function (){
+exports.getTodosClientes = function (){
     return cadastroData.getAll();
 }
