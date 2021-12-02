@@ -7,6 +7,7 @@ const db = pgp({
     port: '5432',
     password: '987654321'
 })
+console.log("db iknet");
 module.exports = db;
 
 /*db.heroku() = pgp({
