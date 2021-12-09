@@ -36,7 +36,7 @@ router.put('/atualizar/:id',async function(req,res){
 }),
 //ROTA P/ REMOVER UM REGISTRO DO BANCO
 router.delete('/remover/:id',async function(req,res){
-    await service.postRemocaoCliente(req.params.id);
+    await service.deleteRemocaoCliente(req.params.id);
     res.end();
 })
 module.exports = router;

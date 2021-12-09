@@ -14,7 +14,7 @@ exports.putAtualizarCliente = function (id, post){
     return cadastroData.updateOne(id,post);
 },
 //ROTA P/ REMOVER UM REGISTRO DO BANCO
-exports.postRemocaoCliente = function(id){
+exports.deleteRemocaoCliente = function(id){
     return cadastroData.deleteOne(id);
 },
 //EXIBIR TODOS DO BANCO
